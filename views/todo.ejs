@@ -1,0 +1,40 @@
+<head>
+    <title>Your To-Do's</title>
+    <link rel="stylesheet" href="/todo.css">
+</head>
+
+<body>
+    <div id="app">
+        <%- include('navbar.ejs') %>
+            <form class="container" method="POST" action="/yourtodos">
+                <h1>Your Todo's</h1>
+                <div class="inputs">
+                    <%for (let i=0;i<datalist.length;i++){%>
+                        <div>
+                            <label for="todo">
+                                <%=i+1%>.
+                            </label>
+                            <input type="text" autocomplete="off" id="todo" disabled value="<%= datalist[i] %>">
+                            <img style="--right:0%" src="/assets/delete-regular.svg">
+                        </div>
+                        <%}%>
+                </div>
+                <textarea name="newtodo" id="newtodo" rows="3" placeholder="Create a to-do"></textarea>
+                <button id="button"> Add </button>
+            </form>
+    </div>
+
+    <script>
+        button.addEventListener('mousedown', () => {
+            button.style.scale = '0.9';
+            setTimeout(() => {
+                button.style.scale = '';
+            }, 200);
+        })
+        button.addEventListener('click', (e) => {
+            if (!newtodo.value) { e.preventDefault() }
+        })
+    </script>
+</body>
+
+</html>

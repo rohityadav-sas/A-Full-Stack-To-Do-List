@@ -1,0 +1,13 @@
+<head>
+    <link rel="stylesheet" href="/navbar.css">
+</head>
+
+<nav id="nav_bar">
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li style="display: <%=data.includes('yourtodo')?'none':'initial'%>;"><a href="/yourtodos">Your todo's</a></li>
+        <li style="display: <%=data.includes('Login')?'none':'initial'%>;"><a href="/login">Login</a></li>
+        <li style="display: <%=data.includes('Logout')?'none':'initial'%>;"><a href="/logout">Logout</a></li>
+        <li style="display: <%=data.includes('Signup')?'none':'initial'%>;"><a href="/signup">Sign Up</a></li>
+    </ul>
+</nav>

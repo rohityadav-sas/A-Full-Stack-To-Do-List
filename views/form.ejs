@@ -1,0 +1,70 @@
+<head>
+    <title>
+        <%=exists?'Login':'Sign Up'%>
+    </title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+
+<body>
+    <div id="app">
+        <%- include('navbar.ejs') %>
+            <form action=" <%=exists?'/login':'/signup'%>" method="POST">
+                <h1>
+                    <%=exists?'Login':'Sign Up'%>
+                </h1>
+                <div class="inputs">
+                    <div>
+                        <img src="/assets/user-solid.svg" alt="">
+                        <div>
+                            <input type="text" name="username" autocomplete="off" id="username" placeholder="&nbsp;">
+                            <div class="labels">Username</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/assets/lock-solid.svg" alt="">
+                        <div>
+                            <input type="text" name="password" autocomplete="off" id="password" placeholder="&nbsp;">
+                            <div class="labels">Password</div>
+                        </div>
+                        <a id="forgot" href="<%=exists?'/resetpassword':'/login'%>">
+                            <%=exists?'Forgot your password?':'Already have an account?'%>
+                        </a>
+                    </div>
+                </div>
+                <button id="button">
+                    <%=exists?'Login':'Sign Up'%>
+                </button>
+            </form>
+
+
+            <script>
+                const button = document.getElementById('button');
+                const labels = document.querySelectorAll('.labels');
+                labels.forEach(e => {
+                    e.addEventListener('click', () => {
+                        e.previousElementSibling.focus();
+                    })
+                })
+
+                button.addEventListener('click', (e) => {
+
+                    if (!username.value || !password.value) { e.preventDefault(); }
+                })
+
+                username.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        if (username.value) { password.focus(); }
+                    }
+                })
+                password.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        if (!password.value) { e.preventDefault(); }
+                    }
+                })
+
+            </script>
+    </div>
+</body>
+
+</html>
