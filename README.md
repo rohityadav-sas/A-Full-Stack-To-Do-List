@@ -25,8 +25,10 @@ Make sure you have the following installed on your system:
    ```bash
    git clone https://github.com/rohityadav-sas/A-Full-Stack-To-Do-List/
 2. Navigate to the project directory:
+   ```bash
    cd todo-list
-3. Install dependencies:
+4. Install dependencies:
+   ```bash
    npm install
 
 ### Usage
