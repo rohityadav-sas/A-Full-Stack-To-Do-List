@@ -1,6 +1,8 @@
 # ToDo List Application
 
 ## Table of Contents
+
+- [Preview](#preview)
 - [Description](#description)
 - [Features](#features)
 - [Getting Started](#getting-started)
