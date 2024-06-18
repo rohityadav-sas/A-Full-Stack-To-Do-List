@@ -1,4 +1,5 @@
 # ToDo List Application
+   This comprehensive ToDo list app offers users a streamlined way to keep track of their tasks. With an intuitive interface, users can effortlessly add and remove tasks. The app leverages Node.js and Express for    server-side operations, employs EJS and CSS for client-side presentation, and utilizes MongoDB for persistent storage of task data.
 
 ## Table of Contents
 
