@@ -17,7 +17,6 @@ router.route('/')
 router.route('/home')
     .get(handleDels, (req, res) => {
         const data = res.locals.returnedValues;
-        console.log(data);
         res.render('home', { data });
     })
 
