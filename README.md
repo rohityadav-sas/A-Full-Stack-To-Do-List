@@ -42,16 +42,24 @@ Make sure you have the following installed on your system:
 1. Clone the repository:
     ```bash
     git clone https://github.com/rohityadav-sas/A-Full-Stack-To-Do-List/
+    ```
+    
 2. Navigate to the project directory:
     ```bash
     cd todo-list
+    ```
+    
 4. Install dependencies:
     ```bash
     npm install
+    ```
 
 ### Usage
 1. Start the application
+   ```bash
     npx nodemon
+   ```
+   
 2. Open your browser and go to http://localhost:3000
 3. Use the application to manage your ToDo list.
 
