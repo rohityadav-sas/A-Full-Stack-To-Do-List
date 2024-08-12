@@ -1,5 +1,5 @@
 # ToDo List Application
-   This comprehensive ToDo list app offers users a streamlined way to keep track of their tasks. With an intuitive interface, users can effortlessly add and remove tasks. The app leverages Node.js and Express for    server-side operations, employs EJS and CSS for client-side presentation, and utilizes MongoDB for persistent storage of task data.
+This comprehensive ToDo list app offers users a streamlined way to keep track of their tasks. With an intuitive interface, users can effortlessly add and remove tasks. The app leverages Node.js and Express for    server-side operations, employs EJS and CSS for client-side presentation, and utilizes MongoDB for persistent storage of task data.
 
 ## Table of Contents
 
@@ -10,9 +10,9 @@
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
    - [Usage](#usage)
-- [Contributing](#contributing)
+- [Dependencies](#dependencies)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Contributing](#contributing)
 
 ## Preview
 
@@ -57,18 +57,34 @@ Make sure you have the following installed on your system:
 ### Usage
 1. Start the application
    ```bash
-    npx nodemon
+    npm start
    ```
    
 2. Open your browser and go to http://localhost:3000
 3. Use the application to manage your ToDo list.
 
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+## Dependencies
+
+- ***cookie-parser***: For parsing and managing cookies in HTTP requests.
+
+- ***dotenv***: For loading environment variables from a .env file.
+
+- ***ejs***: For rendering templates and generating HTML.
+
+- ***express***: For handling HTTP requests and routing.
+
+- ***joi***: For validating data schemas.
+
+- ***jsonwebtoken***: For generating and verifying JSON Web Tokens (JWT) for authentication.
+
+- ***mongoose***: For interacting with MongoDB using an object data modeling (ODM) library.
+
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
-This project was inspired by the need for a simple and effective ToDo list application.
+This project is licensed under the ISC License. See the [LICENSE](./LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
