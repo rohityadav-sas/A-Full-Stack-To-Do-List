@@ -1,12 +1,16 @@
 {
   "name": "full-stack-todo-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "This ToDo app offers a simple way to manage tasks through an intuitive interface, allowing users to easily add and remove tasks with persistent data storage.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "task-manager",
+    "todo-app"
+  ],
   "author": "Rohit Kumar",
   "license": "ISC",
   "dependencies": {
